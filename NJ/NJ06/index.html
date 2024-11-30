@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 style="font-family: sans-serif; font-size: 20px">
-        🔥The Scope Chain, Scope & Lexical Environment
-      </h1>
-      <script src="script.js"></script>
-</body>
+      🔥The Scope Chain, Scope & Lexical Environment
+    </h1>
+    <h2 style="font-family: sans-serif; font-size: 20px">
+      💡Scope : scope refers to the context in which variables and functions are
+      accessible or visible. It determines the area of the code where a
+      particular variable or function can be used.
+    </h2>
+
+    <h2 style="font-family: sans-serif; font-size: 20px">
+      💡Scope Chain : scope chain in JavaScript is the mechanism that allows a
+      function to access variables from its own scope and from the scopes of its
+      parent functions.
+    </h2>
+
+    <h2 style="font-family: sans-serif; font-size: 20px">
+      🤔 How Scope Chain Works When JavaScript looks for a variable:
+      <ul>
+        <li>
+          Local Scope First: It starts with the current scope (the function or
+          block in which the variable is referenced).
+        </li>
+        <li>
+          Parent Scope Next: If the variable isn't found locally, it moves to
+          the parent scope.
+        </li>
+        <li>
+          Global Scope Last: It continues up the chain until it reaches the
+          global scope.
+        </li>
+        <li>
+          ReferenceError: If the variable isn't found in any scope in the chain,
+          JavaScript throws a ReferenceError.
+        </li>
+      </ul>
+    </h2>
+
+    <h2 style="font-family: sans-serif; font-size: 20px">
+      💡What is Lexical Environment..? <br>
+      It is the local memory space along with
+      the lexical environment of its parent. Lexical environment consist of two
+      parts : Environmental Record and a reference to outer lexical environment.
+      While environmental record keeps the local variable data, outer reference
+      keeps a reference for parent’s lexical environment.
+    </h2>
+
+    <script src="script.js"></script>
+  </body>
 </html>
