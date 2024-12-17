@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="font-family: sans-serif; font-size: 20px">
+      💔TRUST ISSUES with setTimeout()
+    </h1>
+    <h2 style="font-family: sans-serif; font-size: 20px">
+      🤔 The First rule of JavaScript : <br />
+      Do not block the main thread (as JS is a single threaded(only 1 callstack
+      language). <br />
+      - In code example, we are blocking the main thread. Observe Question and
+      Output. <br />
+      - setTimeout guarantees that it will take at least the given timer to
+      execute the code. <br />
+      - JS is a synchronous single threaded language. With just 1 thread it runs
+      all pieces of code. It becomes kind of an interpreter language, and runs
+      code very fast inside browser (no need to wait for code to be compiled)
+      (JIT - Just in time compilation). And there are still ways to do async
+      operations as well.
+    </h2>
+  </body>
+
+  <script src="script.js"></script>
+</html>
